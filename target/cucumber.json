@@ -3,31 +3,62 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "Verify the search result by city",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "search-for-properties-on-redfin.com;verify-the-search-result-by-city",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 8350751136,
+              "duration": 2749246109,
               "status": "passed"
             },
-            "line": 6,
+            "line": 4,
             "name": "User is on the redfin homepage",
             "match": {
               "location": "SearchPropertyStepDefinitions.user_is_on_the_redfin_homepage()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "before": [
           {
             "result": {
-              "duration": 4027646672,
+              "duration": 2565996235,
               "status": "passed"
             },
-            "line": 7,
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Verify the search result by city",
+        "description": "",
+        "id": "search-for-properties-on-redfin.com;verify-the-search-result-by-city",
+        "after": [
+          {
+            "result": {
+              "duration": 109365314,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3616694582,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "user searches for properties by the city name",
             "match": {
               "location": "SearchPropertyStepDefinitions.user_searches_for_properties_by_the_city_name()"
@@ -36,21 +67,169 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat com.redfin.step_definitions.SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_city_searched_for(SearchPropertyStepDefinitions.java:39)\n\tat ✽.the displayed properties should be for the city searched for(file:src/test/java/resources/features/SearchProperty.feature:8)\n",
-              "duration": 390519315,
-              "status": "failed"
+              "duration": 666109247,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "the displayed properties should be for the city searched for",
             "match": {
               "location": "SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_city_searched_for()"
             },
             "keyword": "Then "
           }
-        ],
-        "tags": [
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
           {
-            "name": "@search"
+            "result": {
+              "duration": 2705276599,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the redfin homepage",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.user_is_on_the_redfin_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2333318258,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify the search result by zip code",
+        "description": "",
+        "id": "search-for-properties-on-redfin.com;verify-the-search-result-by-zip-code",
+        "after": [
+          {
+            "result": {
+              "duration": 106868192,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1833419280,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user searches for properties by the zip code",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.user_searches_for_properties_by_the_zip_code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2068920046,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the displayed properties should be for the zip code searched for",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_zip_code_searched_for()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2653392563,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the redfin homepage",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.user_is_on_the_redfin_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2252857405,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify the search result school name",
+        "description": "",
+        "id": "search-for-properties-on-redfin.com;verify-the-search-result-school-name",
+        "after": [
+          {
+            "result": {
+              "duration": 116238770,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 356525840,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user searches for properties by the school name",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.user_searches_for_properties_by_the_school_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5565095833,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the displayed properties should be in the same city as the school location city",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.the_displayed_properties_should_be_in_the_same_city_as_the_school_location_city()"
+            },
+            "keyword": "Then "
           }
         ]
       }

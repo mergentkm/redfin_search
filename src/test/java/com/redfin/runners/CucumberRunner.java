@@ -14,7 +14,6 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/java/resources/features",
         glue = "com.redfin.step_definitions",
-        tags = "@search",
         dryRun = false
 )
 public class CucumberRunner {
