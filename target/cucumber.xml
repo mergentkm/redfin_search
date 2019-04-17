@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.771219">
+    <testcase classname="Search for properties on redfin.com" name="Verify the search result by city" time="12.771219">
+        <failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at com.redfin.step_definitions.SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_city_searched_for(SearchPropertyStepDefinitions.java:39)&#10;&#9;at ✽.the displayed properties should be for the city searched for(file:src/test/java/resources/features/SearchProperty.feature:8)&#10;">
+            <![CDATA[Given User is on the redfin homepage........................................passed
+When user searches for properties by the city name..........................passed
+Then the displayed properties should be for the city searched for...........failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.redfin.step_definitions.SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_city_searched_for(SearchPropertyStepDefinitions.java:39)
+	at ✽.the displayed properties should be for the city searched for(file:src/test/java/resources/features/SearchProperty.feature:8)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

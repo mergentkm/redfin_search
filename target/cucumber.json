@@ -1,0 +1,65 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify the search result by city",
+        "description": "",
+        "id": "search-for-properties-on-redfin.com;verify-the-search-result-by-city",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8350751136,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the redfin homepage",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.user_is_on_the_redfin_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4027646672,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches for properties by the city name",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.user_searches_for_properties_by_the_city_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat com.redfin.step_definitions.SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_city_searched_for(SearchPropertyStepDefinitions.java:39)\n\tat ✽.the displayed properties should be for the city searched for(file:src/test/java/resources/features/SearchProperty.feature:8)\n",
+              "duration": 390519315,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the displayed properties should be for the city searched for",
+            "match": {
+              "location": "SearchPropertyStepDefinitions.the_displayed_properties_should_be_for_the_city_searched_for()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "Search for properties on redfin.com",
+    "description": "",
+    "id": "search-for-properties-on-redfin.com",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/resources/features/SearchProperty.feature",
+    "tags": []
+  }
+]
