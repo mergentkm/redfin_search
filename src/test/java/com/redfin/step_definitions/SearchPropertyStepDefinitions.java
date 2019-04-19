@@ -32,11 +32,12 @@ public class SearchPropertyStepDefinitions {
         String expectedLocation = ConfigurationReader.getProperty("searchCity");
 
         for (WebElement property : homePage.properties){
-            System.out.println("Actual:   =>  "+ property.getText());
-            System.out.println("Expected: =>  "+ expectedLocation);
-
-            System.out.println(property.getText().contains(expectedLocation));
-            //Assert.assertTrue(property.getText().contains(expectedLocation));
+            
+//             System.out.println("Actual:   =>  "+ property.getText());
+//             System.out.println("Expected: =>  "+ expectedLocation);
+//             System.out.println(property.getText().contains(expectedLocation));
+            
+            Assert.assertTrue(property.getText().contains(expectedLocation));
         }
     }
 
