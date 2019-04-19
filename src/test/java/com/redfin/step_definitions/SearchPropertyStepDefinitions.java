@@ -37,11 +37,6 @@ public class SearchPropertyStepDefinitions {
 
             System.out.println(property.getText().contains(expectedLocation));
             //Assert.assertTrue(property.getText().contains(expectedLocation));
-        /*
-        When I Assert expected result and actual result for some reason it fails however
-        when debugging and printing values and the condition I am getting correct values
-        as well as true for boolean condition with this specific test case/scenario
-         */
         }
     }
 
